@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Bom dia, minha linda 💖</title>
+
+  <!-- Ícone na aba do navegador -->
+  <link rel="icon" type="image/png" href="icone.png">
+
+  <!-- Meta-tags para compartilhamento (WhatsApp, redes sociais etc.) -->
+  <meta property="og:title" content="Bom dia, minha linda 💖">
+  <meta property="og:description" content="Aposto que você nunca recebeu um bom dia assim...">
+  <meta property="og:image" content="https://seusite.com/icone.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://seusite.com">
+
+  <style>
+    body {
+      background-color: #f8c6d8;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 50px;
+      color: #4a4a4a;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 40px;
+    }
+
+    #gifBotao {
+      width: 120px;
+      height: auto;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    #gifBotao:hover {
+      transform: scale(1.1);
+    }
+
+    #videoContainer {
+      display: none;
+      margin-top: 30px;
+    }
+
+    video {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #placaImg {
+      margin-top: 20px;
+      max-width: 90%;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="frase">Aposto que você nunca recebeu um Bom Dia 💖 assim 👇👇</h1>
+
+  <img id="gifBotao" src="coração.gif" alt="Coração pulsando" onclick="mostrarVideo()">
+
+  <div id="videoContainer">
+    <video controls>
+      <source src="video.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo :(
+    </video>
+    <img src="placa.png" alt="Placa de mensagem" id="placaImg">
+  </div>
+
+  <script>
+    function mostrarVideo() {
+      document.getElementById('gifBotao').style.display = 'none';
+      document.getElementById('frase').style.display = 'none';
+      document.getElementById('videoContainer').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
